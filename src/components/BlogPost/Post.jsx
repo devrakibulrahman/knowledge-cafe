@@ -2,8 +2,8 @@ import 'boxicons/css/boxicons.min.css';
 import 'remixicon/fonts/remixicon.css';
 import PropTypes from "prop-types";
 
-const Post = ({post}) => {
-    console.log(post)
+const Post = ({post, handleBookmark}) => {
+
     return (
         <div className="w-full flex flex-col items-center justify-center gap-10">
             {
@@ -24,7 +24,7 @@ const Post = ({post}) => {
                             </div>
                             <div className='w-auto flex items-center justify-center gap-2 md:gap-3'>
                                 <p className='font-exo2 text-sm leading-[24px] font-medium text-[#11111199] md:text-[16px] 2xl:text-xl'>{post.post_reading_time} min read</p>
-                                <div className='w-auto flex items-center justify-center cursor-pointer'>
+                                <div className='w-auto flex items-center justify-center cursor-pointer' onClick={() => handleBookmark(post)}>
                                     <i className="ri-bookmark-line text-[#11111199] md:text-[18px] 2xl:text-2xl transition-all ease-in-out duration-200 hover:text-[#6047EC]"></i>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@ const Post = ({post}) => {
                         <div className='w-full flex items-center gap-4 mt-4'>
                             {
                                 post.hashtags.map((tag) => 
-                                    <p key={post.id} className='font-exo2 text-sm leading-[24px] font-medium text-[#11111199] md:text-[16px] 2xl:text-xl'>{tag}</p>
+                                    <p key={tag} className='font-exo2 text-sm leading-[24px] font-medium text-[#11111199] md:text-[16px] 2xl:text-xl'>{tag}</p>
                                 )
                             }
                         </div>
@@ -51,6 +51,7 @@ const Post = ({post}) => {
 
 Post.propTypes =  {
     post: PropTypes.array.isRequired,
-}
+    handleBookmark: PropTypes.func.isRequired,
+};
 
 export default Post;
