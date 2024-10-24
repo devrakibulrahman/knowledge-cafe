@@ -7,12 +7,12 @@ const Post = () => {
         <div className="w-full flex flex-col items-center justify-center gap-10">
             <div className="w-full sm:w-[616px] xl:w-full 2xl:w-full">
                 <div className="w-full mb-4 xl:mb-6 2xl:mb-8">
-                    <img src="../../../public/img/2.png" className='w-full xl:w-[995px] 2xl:w-[995px] object-cover'/>
+                    <img src="./img/2.png"/>
                 </div>
                 <div className="w-full flex items-center justify-between">
                     <div className='w-auto flex items-center justify-center gap-3'>
                         <div className="w-[40px] h-[40px] md:w-[44px] md:h-[44px] lg:w-[48px] lg:h-[48px] xl:w-[50px] xl:h-[50px] 2xl:w-[60px] 2xl:h-[60px]">
-                            <img src="../../../public/img/boy1.png" />
+                            <img src="./img/boy1.png"/>
                         </div>
                         <div className='w-auto'>
                             <h1 className='font-exo2 text-[16px] leading-[160%] font-bold text-[#111111] md:text-lg lg:text-[20px] xl:text-2xl'>Mr. Rakibul Rahman</h1>
@@ -39,12 +39,12 @@ const Post = () => {
             </div>
             <div className="w-full sm:w-[616px] xl:w-full 2xl:w-full">
                 <div className="w-full mb-4 xl:mb-6 2xl:mb-8">
-                    <img src="../../../public/img/2.png" className='w-full xl:w-[995px] 2xl:w-[995px] object-cover'/>
+                    <img src="./img/2.png"/>
                 </div>
                 <div className="w-full flex items-center justify-between">
                     <div className='w-auto flex items-center justify-center gap-3'>
                         <div className="w-[40px] h-[40px] md:w-[44px] md:h-[44px] lg:w-[48px] lg:h-[48px] xl:w-[50px] xl:h-[50px] 2xl:w-[60px] 2xl:h-[60px]">
-                            <img src="../../../public/img/boy1.png" />
+                            <img src="./img/boy1.png"/>
                         </div>
                         <div className='w-auto'>
                             <h1 className='font-exo2 text-[16px] leading-[160%] font-bold text-[#111111] md:text-lg lg:text-[20px] xl:text-2xl'>Mr. Rakibul Rahman</h1>
@@ -71,12 +71,12 @@ const Post = () => {
             </div>
             <div className="w-full sm:w-[616px] xl:w-full 2xl:w-full">
                 <div className="w-full mb-4 xl:mb-6 2xl:mb-8">
-                    <img src="../../../public/img/2.png" className='w-full xl:w-[995px] 2xl:w-[995px] object-cover'/>
+                    <img src="./img/2.png"/>
                 </div>
                 <div className="w-full flex items-center justify-between">
                     <div className='w-auto flex items-center justify-center gap-3'>
                         <div className="w-[40px] h-[40px] md:w-[44px] md:h-[44px] lg:w-[48px] lg:h-[48px] xl:w-[50px] xl:h-[50px] 2xl:w-[60px] 2xl:h-[60px]">
-                            <img src="../../../public/img/boy1.png" />
+                            <img src="./img/boy1.png"/>
                         </div>
                         <div className='w-auto'>
                             <h1 className='font-exo2 text-[16px] leading-[160%] font-bold text-[#111111] md:text-lg lg:text-[20px] xl:text-2xl'>Mr. Rakibul Rahman</h1>
