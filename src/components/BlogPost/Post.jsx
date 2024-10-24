@@ -15,7 +15,7 @@ const Post = ({post}) => {
                         <div className="w-full flex items-center justify-between">
                             <div className='w-auto flex items-center justify-center gap-3'>
                                 <div className="w-[40px] h-[40px] md:w-[44px] md:h-[44px] lg:w-[48px] lg:h-[48px] xl:w-[50px] xl:h-[50px] 2xl:w-[60px] 2xl:h-[60px]">
-                                    <img src="./img/boy1.png"/>
+                                    <img src={`${post.profile}`}/>
                                 </div>
                                 <div className='w-auto'>
                                     <h1 className='font-exo2 text-[16px] leading-[160%] font-bold text-[#111111] md:text-lg lg:text-[20px] xl:text-2xl'>{post.author_name}</h1>
