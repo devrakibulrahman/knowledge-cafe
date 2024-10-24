@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "author_name": "Liam Johnson",
+      "post_date": "Oct 20 (4 days ago)",
+      "post_title": "The Future of Web Development",
+      "hashtags": ["#WebDev", "#Future", "#Technology"],
+      "post_reading_time": "5 mins",
+      "img": "https://ibb.co.com/ft5z0jg",
+      "profile": "https://ibb.co.com/8P62Hgq"
+    },
+    {
+      "author_name": "Emma Davis",
+      "post_date": "Oct 19 (5 days ago)",
+      "post_title": "Understanding CSS Grid Layout",
+      "hashtags": ["#CSS", "#Grid", "#Frontend"],
+      "post_reading_time": "7 mins",
+      "img": "https://ibb.co.com/7t1Tf5f",
+      "profile": "https://ibb.co.com/gdPxhC0"
+    },
+    {
+      "author_name": "Noah Brown",
+      "post_date": "Oct 15 (9 days ago)",
+      "post_title": "A Beginner’s Guide to JavaScript",
+      "hashtags": ["#JavaScript", "#Coding", "#Learning"],
+      "post_reading_time": "10 mins",
+      "img": "https://ibb.co.com/q9vpTP2",
+      "profile": "https://ibb.co.com/J7PCmB1"
+    },
+    {
+      "author_name": "Sophia Wilson",
+      "post_date": "Oct 12 (12 days ago)",
+      "post_title": "Mastering React.js in 2024",
+      "hashtags": ["#ReactJS", "#Frontend", "#Development"],
+      "post_reading_time": "8 mins",
+      "img": "https://ibb.co.com/bXFNV6N",
+      "profile": "https://ibb.co.com/72xS0Sp"
+    }
+  ]
+}
