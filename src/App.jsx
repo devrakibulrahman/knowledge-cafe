@@ -25,11 +25,18 @@ const App = () => {
     };
   };
 
+  const handleMarkAsRead = (post_title) => {
+    const remainingBookmark = bookmarks.filter((mark) => mark.post_title !== post_title);
+    setBookmark(remainingBookmark);
+  };
+
+  console.log(bookmarks);
+
   return (
     //? container --------------->
     <div className="container mx-auto px-3">
       <Header></Header>
-      <BodySection posts={posts} handleBookmark={handleBookmark} bookmarks={bookmarks}></BodySection>
+      <BodySection posts={posts} handleBookmark={handleBookmark} handleMarkAsRead={handleMarkAsRead} bookmarks={bookmarks}></BodySection>
       <Footer></Footer>
     </div>
   );

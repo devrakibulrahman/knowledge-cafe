@@ -2,7 +2,7 @@ import 'boxicons/css/boxicons.min.css';
 import 'remixicon/fonts/remixicon.css';
 import PropTypes from "prop-types";
 
-const Post = ({post, handleBookmark}) => {
+const Post = ({post, handleBookmark, handleMarkAsRead}) => {
 
     return (
         <div className="w-full flex flex-col items-center justify-center gap-10">
@@ -40,7 +40,7 @@ const Post = ({post, handleBookmark}) => {
                             }
                         </div>
                         <div className="w-full mt-5">
-                            <p className='font-exo2 text-sm leading-[24px] font-medium text-[#6047EC] md:text-[16px] 2xl:text-xl underline cursor-pointer transition-all ease-in-out duration-200 hover:text-[#806cee]'>Mark as read</p>
+                            <p className='font-exo2 text-sm leading-[24px] font-medium text-[#6047EC] inline-block md:text-[16px] 2xl:text-xl underline cursor-pointer transition-all ease-in-out duration-200 hover:text-[#806cee]' onClick={() => handleMarkAsRead(post.post_title)}>Mark as read</p>
                         </div>
                     </div>
                 )
@@ -52,6 +52,7 @@ const Post = ({post, handleBookmark}) => {
 Post.propTypes =  {
     post: PropTypes.array.isRequired,
     handleBookmark: PropTypes.func.isRequired,
+    handleMarkAsRead: PropTypes.func.isRequired,
 };
 
 export default Post;
