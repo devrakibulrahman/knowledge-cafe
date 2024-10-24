@@ -40,7 +40,7 @@ const Post = ({post, handleBookmark, handleMarkAsRead}) => {
                             }
                         </div>
                         <div className="w-full mt-5">
-                            <p className='font-exo2 text-sm leading-[24px] font-medium text-[#6047EC] inline-block md:text-[16px] 2xl:text-xl underline cursor-pointer transition-all ease-in-out duration-200 hover:text-[#806cee]' onClick={() => handleMarkAsRead(post.post_title)}>Mark as read</p>
+                            <p className='font-exo2 text-sm leading-[24px] font-medium text-[#6047EC] inline-block md:text-[16px] 2xl:text-xl underline cursor-pointer transition-all ease-in-out duration-200 hover:text-[#806cee]' onClick={() => handleMarkAsRead(post.post_title, post.post_reading_time)}>Mark as read</p>
                         </div>
                     </div>
                 )

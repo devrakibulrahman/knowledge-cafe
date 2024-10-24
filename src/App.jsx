@@ -8,6 +8,7 @@ const App = () => {
   //? declare useState for hold data from useEffect add for others ----------------> 
   const [posts, setPost] = useState([]);
   const [bookmarks, setBookmark] = useState([]);
+  const [numbers, setNumber] = useState(0);
 
   //? fetch data from api.json ---------------->
   useEffect(() => {
@@ -25,18 +26,29 @@ const App = () => {
     };
   };
 
-  const handleMarkAsRead = (post_title) => {
+  const handleMarkAsRead = (post_title, post_reading_time) => {
     const remainingBookmark = bookmarks.filter((mark) => mark.post_title !== post_title);
     setBookmark(remainingBookmark);
+    spentTimesToReading(post_reading_time);
   };
 
-  console.log(bookmarks);
+  const spentTimesToReading = (readTime) => {
+    setNumber(readTime);
+    readingTimeSum(readTime);
+  };
+
+  //? reading time function declare ------------------->
+  const readingTimeSum = (min) => {
+    const spentTime = parseInt(numbers) + parseInt(min);
+    setNumber(spentTime)
+  };
+
 
   return (
     //? container --------------->
     <div className="container mx-auto px-3">
       <Header></Header>
-      <BodySection posts={posts} handleBookmark={handleBookmark} handleMarkAsRead={handleMarkAsRead} bookmarks={bookmarks}></BodySection>
+      <BodySection posts={posts} handleBookmark={handleBookmark} handleMarkAsRead={handleMarkAsRead} bookmarks={bookmarks} numbers={numbers}></BodySection>
       <Footer></Footer>
     </div>
   );
