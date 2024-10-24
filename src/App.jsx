@@ -18,7 +18,9 @@ const App = () => {
       .catch((err) => console.log(err))
   }, []);
 
+
   //? all event handler declare here ----------------->
+
   const handleBookmark = (post_title) => {
     if(!bookmarks.includes(post_title)){
       const bookmark = [...bookmarks, post_title];
@@ -38,11 +40,11 @@ const App = () => {
   };
 
   //? reading time function declare ------------------->
+  
   const readingTimeSum = (min) => {
     const spentTime = parseInt(numbers) + parseInt(min);
     setNumber(spentTime)
   };
-
 
   return (
     //? container --------------->
