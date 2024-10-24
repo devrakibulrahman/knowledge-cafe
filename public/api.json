@@ -1,40 +1,44 @@
 {
   "posts": [
     {
+      "id": "1",
       "author_name": "Liam Johnson",
       "post_date": "Oct 20 (4 days ago)",
       "post_title": "The Future of Web Development",
       "hashtags": ["#WebDev", "#Future", "#Technology"],
-      "post_reading_time": "5 mins",
-      "img": "https://ibb.co.com/ft5z0jg",
-      "profile": "https://ibb.co.com/8P62Hgq"
+      "post_reading_time": "5",
+      "img": "https://i.ibb.co.com/xG0t5xk/2.png",
+      "profile": "https://i.ibb.co.com/vhQSR8N/girl2.jpg"
     },
     {
+      "id": "2",
       "author_name": "Emma Davis",
       "post_date": "Oct 19 (5 days ago)",
       "post_title": "Understanding CSS Grid Layout",
       "hashtags": ["#CSS", "#Grid", "#Frontend"],
-      "post_reading_time": "7 mins",
-      "img": "https://ibb.co.com/7t1Tf5f",
-      "profile": "https://ibb.co.com/gdPxhC0"
+      "post_reading_time": "7",
+      "img": "https://i.ibb.co.com/rH35hQ5/4.jpg",
+      "profile": "https://i.ibb.co.com/Yfp8xBm/girl1.jpg"
     },
     {
+      "id": "3",
       "author_name": "Noah Brown",
       "post_date": "Oct 15 (9 days ago)",
       "post_title": "A Beginner’s Guide to JavaScript",
       "hashtags": ["#JavaScript", "#Coding", "#Learning"],
-      "post_reading_time": "10 mins",
-      "img": "https://ibb.co.com/q9vpTP2",
-      "profile": "https://ibb.co.com/J7PCmB1"
+      "post_reading_time": "10",
+      "img": "https://i.ibb.co.com/WFLfmYR/3.png",
+      "profile": "https://i.ibb.co.com/LnD0s0g/boy2.jpg"
     },
     {
-      "author_name": "Sophia Wilson",
+      "id": "4",
+      "author_name": "Max Johnson",
       "post_date": "Oct 12 (12 days ago)",
       "post_title": "Mastering React.js in 2024",
       "hashtags": ["#ReactJS", "#Frontend", "#Development"],
-      "post_reading_time": "8 mins",
-      "img": "https://ibb.co.com/bXFNV6N",
-      "profile": "https://ibb.co.com/72xS0Sp"
+      "post_reading_time": "8",
+      "img": "https://i.ibb.co.com/60WpMxM/1.jpg",
+      "profile": "https://i.ibb.co.com/r6JvF7j/boy1.png"
     }
   ]
 }

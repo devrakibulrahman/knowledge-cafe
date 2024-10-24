@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const App = () => {
   //? declare useState for hold data from useEffect ----------------> 
-  const [post, setPost] = useState([]);
+  const [posts, setPost] = useState([]);
 
   //? fetch data from api.json ---------------->
   useEffect(() => {
@@ -21,7 +21,7 @@ const App = () => {
     //? container --------------->
     <div className="container mx-auto px-3">
       <Header></Header>
-      <BodySection></BodySection>
+      <BodySection posts={posts}></BodySection>
       <Footer></Footer>
     </div>
   );
